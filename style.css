@@ -1,0 +1,108 @@
+:root {
+  --bs-primary: #1a233d; /* Greyish Blue */
+}
+
+/* Apply to Bootstrap components */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+.custom-name {
+  color: #91bbe0; /* or any color you like */
+}
+
+#home img {
+  border: 6px solid var(--bs-primary);
+}
+
+#skills .badge {
+  font-size: 0.9rem;
+  padding: 0.6em 1em;
+  border-radius: 20px;
+}
+
+/* Image Modal Styling */
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.img-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid white;
+  box-shadow: 0 0 20px #000;
+}
+
+.img-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1051;
+}
+
+/* Background gradient animation */
+#home {
+  background: linear-gradient(-45deg, #5a6e7f, #2c3e50, #5a6e7f, #34495e);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Semi-transparent overlay */
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.5);
+  z-index: 0;
+}
+
+/* Animate content entrance */
+.animate-content {
+  z-index: 1;
+  animation: fadeUp 1.2s ease-out both;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contact a {
+  word-break: break-word;
+}

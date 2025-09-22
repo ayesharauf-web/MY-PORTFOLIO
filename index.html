@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayesha Rauf | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Ayesha Rauf</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+    <a class="nav-link" href="#projects">Projects</a>
+  </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section - With Animation -->
+<section class="d-flex align-items-center justify-content-center text-center text-white" id="home" style="min-height: 100vh; padding-top: 60px; position: relative;">
+  <div class="home-overlay"></div>
+  <div class="container position-relative animate-content">
+    <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="custom-name">Ayesha Rauf</span></h1>
+    <p class="lead mb-4">A passionate IT graduate focused on building meaningful web and mobile applications.</p>
+    <a href="#about" class="btn btn-primary">Explore My Work</a>
+  </div>
+</section>
+
+
+
+  <!-- About Section -->
+  <section class="py-5 bg-white" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Photo -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images/MY.png" class="rounded-circle img-fluid" alt="Bushra Anum">
+        </div>
+
+        <!-- Bio -->
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>
+           Hi, I’m Ayesha Rauf, a recent graduate in Information Technology from Bahria University. I am passionate about building innovative and user-friendly digital solutions, with a focus on both web and mobile app development.
+          </p>
+          <p>
+            I have hands-on experience with modern technologies such as Flutter, HTML, and CSS, and I enjoy turning ideas into interactive, functional, and visually appealing applications. I am eager to keep learning, explore new technologies, and contribute to impactful projects in the field of software development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section class="py-5 bg-white" id="projects">
+  <div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Recipe Finder App -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/RS.png" class="card-img-top project-img" alt="Recipe Finder App" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Recipe Finder App</h5>
+            <p class="card-text">An app that suggests recipes based on ingredients entered by the user. Helps save time and reduce food waste.</p>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">SQLite</span>
+            <span class="badge bg-secondary">API Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Budgeting App -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/STB.png" class="card-img-top" alt="Student Budgeting App" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Student Budgeting App</h5>
+            <p class="card-text">A mobile app to help students track daily expenses and manage their monthly budget. Simple UI with visual reports.</p>
+            <span class="badge bg-secondary">Flutter</span>
+            <span class="badge bg-secondary">SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="col-md-4">
+        <div class="card shadow h-100">
+          <img src="images/PF.png" class="card-img-top" alt="Portfolio Website" onclick="openModal(this)">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">My personal portfolio website showcasing my skills, projects, and contact info. Fully responsive and Bootstrap-based.</p>
+            <span class="badge bg-secondary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-secondary">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<!-- Skills Section -->
+<section class="py-5 bg-light" id="skills">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    
+    <div class="row">
+
+      <!-- Frontend Skills -->
+      <div class="col-md-4">
+        <h5 class="text-center mb-3">Frontend</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="badge bg-secondary">HTML5</span>
+          <span class="badge bg-secondary">CSS3</span>
+          <span class="badge bg-secondary">Bootstrap</span>
+          <span class="badge bg-secondary">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Mobile App Development -->
+      <div class="col-md-4">
+        <h5 class="text-center mb-3">Mobile</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="badge bg-secondary">Flutter</span>
+          <span class="badge bg-secondary">Dart</span>
+          <span class="badge bg-secondary">Kotlin</span>
+          <span class="badge bg-secondary">Java</span>
+        </div>
+      </div>
+
+      <!-- Tools & Others -->
+      <div class="col-md-4">
+        <h5 class="text-center mb-3">Tools & Other</h5>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge bg-secondary">Android Studio</span>
+          <span class="badge bg-secondary">GitHub</span>
+          <span class="badge bg-secondary">Visual Studio</span>
+          <span class="badge bg-secondary">VS Code</span>
+            <span class="badge bg-secondary">Figma</span>
+            <span class="badge bg-secondary">Problem Solving</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section class="py-5 bg-white" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Me</h2>
+    
+    <div class="row">
+      <!-- Left Side: Info & CV -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="bg-light p-4 h-100 shadow-sm rounded text-center text-md-start">
+          <h4 class="mb-3">Ayesha Rauf</h4>
+          <p><strong>Email:</strong> <a href="mailto:bushra@example.com">ayesharauf2002gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+923001234567">+92 337 2107221</a></p>
+          <p><strong>Location:</strong> Karachi, Pakistan</p>
+          <a href="CV.pdf" download class="btn btn-outline-primary mt-3">Download CV</a>
+        </div>
+      </div>
+
+      <!-- Right Side: Form -->
+      <div class="col-md-7">
+        <form id="contactForm" action="https://formspree.io/f/mdkdgdgz" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" name="name" class="form-control" id="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="message" rows="5" required></textarea>
+          </div>
+
+          <div class="text-center text-md-start">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Modal -->
+<div id="imgModal" class="img-modal" onclick="closeModal()">
+  <span class="img-close" onclick="closeModal()">&times;</span>
+  <img class="img-modal-content" id="modalImage" alt="">
+</div>
+<script>
+  function openModal(imgElement) {
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    event.stopPropagation(); // prevent modal click from closing immediately
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+</script>
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Ayesha Rauf.</p>
+  </div>
+</footer>
+<script>
+  // Clear form if it's a page restore (like back button)
+  window.addEventListener('pageshow', function (event) {
+    const form = document.getElementById('contactForm');
+    if (event.persisted || window.performance?.navigation?.type === 2) {
+      // If the user came from the back/forward button or browser cache
+      form.reset();
+    }
+  });
+</script>
+
+</body>
+</html>
